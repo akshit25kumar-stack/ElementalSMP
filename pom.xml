@@ -16,11 +16,17 @@
         <java.version>21</java.version>
     </properties>
 
-    <!-- IMPORTANT: Paper repository -->
+    <!-- FIXED REPOSITORY (snapshots enabled) -->
     <repositories>
         <repository>
-            <id>papermc-repo</id>
+            <id>papermc</id>
             <url>https://repo.papermc.io/repository/maven-public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
         </repository>
     </repositories>
 
@@ -37,7 +43,7 @@
         <finalName>ElementalSMP</finalName>
         <plugins>
 
-            <!-- Java Compiler -->
+            <!-- Java 21 Compiler -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -48,7 +54,7 @@
                 </configuration>
             </plugin>
 
-            <!-- Shade Plugin (safe to keep) -->
+            <!-- Shade Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
