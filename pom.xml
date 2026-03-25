@@ -72,7 +72,7 @@
         </plugins>
     </build>
 
-</project>
+
 <settings>
   <mirrors>
     <mirror>
@@ -82,3 +82,4 @@
     </mirror>
   </mirrors>
 </settings>
+</project>
